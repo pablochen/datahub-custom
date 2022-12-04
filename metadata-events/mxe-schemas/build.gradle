@@ -1,5 +1,10 @@
+plugins {
+  id "ua.eshepelyuk.ManifestClasspath" version "1.0.0"
+}
+
 apply plugin: 'java'
 apply plugin: 'pegasus'
+
 
 dependencies {
   dataModel project(path: ':li-utils', configuration: 'dataTemplate')

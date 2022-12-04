@@ -1,6 +1,7 @@
 import io.datahubproject.GenerateJsonSchemaTask
-
-
+plugins {
+  id "ua.eshepelyuk.ManifestClasspath" version "1.0.0"
+}
 apply plugin: 'pegasus'
 
 tasks.withType(JavaCompile).configureEach {
@@ -8,6 +9,7 @@ tasks.withType(JavaCompile).configureEach {
     languageVersion = JavaLanguageVersion.of(8)
   }
 }
+
 tasks.withType(Test).configureEach {
   javaLauncher = javaToolchains.launcherFor {
     languageVersion = JavaLanguageVersion.of(8)

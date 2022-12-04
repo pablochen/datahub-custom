@@ -11,6 +11,7 @@ buildscript {
 
 plugins {
     id 'base'
+    id "ua.eshepelyuk.ManifestClasspath" version "1.0.0"
 }
 apply plugin: 'pegasus'
 
